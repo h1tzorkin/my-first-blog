@@ -1,0 +1,58 @@
+
+body {
+background-color:#123456
+}
+#name {
+margin:70 auto;
+width:1900px;
+height:1500px;
+padding:30px;
+border:3px solid #3ffaaa;
+background:white url("images/2_Floor.png") no-repeat;
+color:#000000;
+}
+
+button.button_light {
+
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #F64C2B;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+  background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+.button_light_203_off{
+	padding-left: 600px;
+	padding-top: 90px;
+}
+button.button_light2 {
+
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #008000;
+  
+}
+.button_light_203_on{
+	padding-left: 600px;
+	padding-top: -20px;
+}
+.sign_203b {
+	padding-left: 600px;
+	font-size: 15px;
+}

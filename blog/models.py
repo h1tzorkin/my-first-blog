@@ -18,3 +18,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class List(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    text = models.TextField()
+    name = models.CharField(max_length=255)

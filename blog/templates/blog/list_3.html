@@ -1,0 +1,56 @@
+<!--{% load static %}
+<html>
+    <head>
+        <title>Django blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    </head>
+    <body>
+    <h1> Hello</h1>
+    <h2>
+
+        <form method="post" class="button">
+            {% csrf_token %}
+            <input type="hidden" name="light_203b" value="on">
+            <button type="submit" class="button_light">Включить</button>
+        </form>
+    </h2>
+    </body>-->
+{% load static %}
+</html>
+
+<head>
+        
+        <title>Пример</title>
+        <title>Django blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+
+</style>
+</head>
+<body>
+<div id="name">Текст описsssssssssуемого блока
+    <h2 class="button_light_203_off">
+        <form method="post" class="button">
+            {% csrf_token %}
+            <input type="hidden" name="light_203b" value="off">
+            <button type="submit" class="button_light" style="font-size:20;">выкл</button>
+        </form>
+    </h2>
+    <h2 class="button_light_203_on">
+        <form method="post" class="button">
+            {% csrf_token %}
+            <input type="hidden" name="light_203b" value="on">
+            <button type="submit" class="button_light2" style="font-size:20;">вкл</button>
+        </form>
+    </h2>
+    <h2 class="sign_203b">{% if button_state %}Включено{% else %}Отключено{% endif %}</h2>
+</div>
+    
+</body> 
