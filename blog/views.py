@@ -2,7 +2,8 @@ from django.shortcuts import render
 from .models import Post,List
 # Create your views here.
 from django.utils import timezone
-
+import os
+import re
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
@@ -24,6 +25,12 @@ def list_3(request):
 		state = request.POST.get('light_203b') # on off
 		button_state = state == 'on'
 		#вызвать скрипт
+		if button_state == True:
+			os.popen("mosquitto_pub -h 192.168.15.8 -t /devices/knx/controls/data/on -m \"g:3/3/3 GroupValueWrite 0x01\"")
+		else:
+			os.popen("mosquitto_pub -h 192.168.15.8 -t /devices/knx/controls/data/on -m \"g:3/3/3 GroupValueWrite 0x01\"")
+
+
 	return render(request, 'blog/list_3.html', {'button_state': button_state, })
 	
 

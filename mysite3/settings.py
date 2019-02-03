@@ -25,7 +25,7 @@ SECRET_KEY = 'za&!8zd3vg7anerln&a+n(5-k6+4zu%)n+o7s+-9o8i^dkpy86'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.15.8', '8008']
 
 
 # Application definition
