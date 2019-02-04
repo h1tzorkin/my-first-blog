@@ -28,7 +28,7 @@ def list_3(request):
 		if button_state == True:
 			os.popen("mosquitto_pub -h 192.168.15.8 -t /devices/knx/controls/data/on -m \"g:3/3/3 GroupValueWrite 0x01\"")
 		else:
-			os.popen("mosquitto_pub -h 192.168.15.8 -t /devices/knx/controls/data/on -m \"g:3/3/3 GroupValueWrite 0x01\"")
+			os.popen("mosquitto_pub -h 192.168.15.8 -t /devices/knx/controls/data/on -m \"g:3/3/3 GroupValueWrite 0x00\"")
 
 
 	return render(request, 'blog/list_3.html', {'button_state': button_state, })
